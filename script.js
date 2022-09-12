@@ -63,6 +63,7 @@ function random(){
             player2Score=0;
             randomNum=0;
             winScore=0;
+            count=0;
             player1.innerText=player1Score;
             player2.innerText=player2Score;
             number.innerText=randomNum;
