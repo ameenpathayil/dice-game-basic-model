@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+.container{
+    margin-top: 45px;
+    background: black;
+    
+}
+h1{
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+h2{
+    color: white;
+    text-transform: uppercase;
+}
+.dice-game{
+    height: 100vh;
+}
+.player1{
+    height: 500px;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dice-throw{
+    height: 500px;
+    background:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#dice-number{
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    font-size: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+#button{
+    margin-top: 20px;
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+.player2{
+    height: 500px;
+    background: rgb(149, 230, 44);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+    border: 3px solid rgb(243, 240, 240);
+    width: 100px;
+    height: 50px;
+    padding:10px;
+    text-align: center;
+    color: white;
+    background: black;
+}
+#winner-announce{
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+}
+#new-game{
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: rgb(224, 18, 173);
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+@media(max-width:600px){
+
+    .player1{
+        height: 200px;
+        background: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .player2{
+        height: 200px;
+        background: rgb(149, 230, 44);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
