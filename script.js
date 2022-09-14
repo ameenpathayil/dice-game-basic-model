@@ -1,4 +1,4 @@
-let number=document.getElementById("dice-number");
+let playerChance=document.getElementById("player-chance");
 let button=document.getElementById("button");
 let randomNum;
 let player1=document.getElementById("player1-score");
@@ -29,6 +29,7 @@ function random(){
         if(playerSelect==1){
             player1Score=player1Score+randomNum;
             player1.innerText=player1Score;
+            playerChance.innerText="Player 2 Chance"
             console.log("player 1 score",player1Score);
             if(player1Score > winScore){
                 winScore=player1Score
@@ -43,6 +44,7 @@ function random(){
         else if(playerSelect==0){
             player2Score=player2Score+randomNum;
             player2.innerText=player2Score;
+            playerChance.innerText="Player 1 Chance"
             console.log(player2);
             if(player2Score > winScore){
                 winScore=player2Score
