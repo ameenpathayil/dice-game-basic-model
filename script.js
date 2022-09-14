@@ -68,6 +68,7 @@ function random(){
             randomNum=0;
             winScore=0;
             count=0;
+            playerChance.innerText="Player 1 Chance"
             player1.innerText=player1Score;
             player2.innerText=player2Score;
             image.setAttribute('src','image2/'+image2[0]);
