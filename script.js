@@ -10,6 +10,7 @@ let i;
 let winScore=0;
 let winAnnounce=document.getElementById("winner-announce");
 let newGame=document.getElementById("new-game");
+let diceImage=document.getElementById("dice-image");
 
 
 button.addEventListener("click",random);
@@ -18,7 +19,8 @@ function random(){
     if(winScore < 25){
         min=1,max=7
         randomNum=Math.floor(Math.random() * (max - min)) + min;
-        number.innerText=randomNum;
+        image2=['roll-dice.gif','1.png','2.png','3.png','4.png','5.png','6.png',]
+        image.setAttribute('src','image2/'+image2[randomNum]);
         console.log("random number",randomNum);
         count=count+1;
         console.log("count",count);
@@ -66,7 +68,7 @@ function random(){
             count=0;
             player1.innerText=player1Score;
             player2.innerText=player2Score;
-            number.innerText=randomNum;
+            image.setAttribute('src','image2/'+image2[0]);
             winAnnounce.innerText="";
         }
 
